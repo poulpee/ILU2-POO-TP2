@@ -49,7 +49,7 @@ public class BoundaryEmmenager {
         int forceMax = Clavier.entrerEntier(nomVisiteur);
         
         controlEmmenager.ajouterDruide(nomVisiteur, force, forceMin, forceMax);
-        System.out.println("Le druide " + nomVisiteur + " : \"Bonjour, je suis le druide " + nomVisiteur + " et ma potion peut aller d'une force " + forceMin + " à " + forceMax + ".\"");
+        //System.out.println("Le druide " + nomVisiteur + " : \"Bonjour, je suis le druide " + nomVisiteur + " et ma potion peut aller d'une force " + forceMin + " à " + forceMax + ".\"");
 	}
 	
 	private void emmenagerGaulois(String nomVisiteur) {

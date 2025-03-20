@@ -29,7 +29,7 @@ public class Etal {
 		this.vendeur = vendeur;
 		this.produit = produit;
 		this.quantite = quantite;
-		quantiteDebutMarche = quantite;
+		setQuantiteDebutMarche(quantite);
 		etalOccupe = true;
 	}
 
@@ -67,10 +67,18 @@ public class Etal {
 		if (etalOccupe) {
 			donneesVente[1] = vendeur.getNom();
 			donneesVente[2] = produit;
-			donneesVente[3] = String.valueOf(quantiteDebutMarche);
-			donneesVente[4] = String.valueOf(quantiteDebutMarche - quantite);
+			donneesVente[3] = String.valueOf(getQuantiteDebutMarche());
+			donneesVente[4] = String.valueOf(getQuantiteDebutMarche() - quantite);
 		}
 		return donneesVente;
+	}
+
+	public int getQuantiteDebutMarche() {
+		return quantiteDebutMarche;
+	}
+
+	public void setQuantiteDebutMarche(int quantiteDebutMarche) {
+		this.quantiteDebutMarche = quantiteDebutMarche;
 	}
 
 }
